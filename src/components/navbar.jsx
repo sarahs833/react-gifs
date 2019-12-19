@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 
 class Navbar extends Component {
-  constructor(props) {
-    super(props);
 
-  }
-
+search = (e) => {
+  this.props.searchWord(e.target.value);
+}
   render() {
     return (
       <div>
@@ -13,6 +12,7 @@ class Navbar extends Component {
         <input
           className="form-control form-search"
           type="text"
+          onChange={this.search}
         />
       </div>
     );

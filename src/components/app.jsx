@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div>
         <div className="left-scene">
-          <Navbar />
+          <Navbar searchWord={this.searchWord} />
           <div className="selected-git">
           </div>
         </div>
