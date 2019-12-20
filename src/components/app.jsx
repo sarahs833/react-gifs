@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import giphy from 'giphy-api';
+import giphy from 'giphy-api';
 import Git from './git';
 import Navbar from './navbar';
 import GifList from './gif_list'
@@ -25,6 +25,7 @@ class App extends Component {
       rating: 'g',
       limit: 10
     }, (err, result) => {
+      console.log(err),
       this.setState({
         gifs: result.data
       });
