@@ -8,7 +8,6 @@ search = (e) => {
   render() {
     return (
       <div>
-        <p>Hello</p>
         <input
           className="form-control form-search"
           type="text"
